@@ -29,6 +29,14 @@ navLink.forEach((i) => i.addEventListener("click", linkAction));
 
 /*=============== SHADOW HEADER ===============*/
 
+const shadowHeader = () => {
+  const header = document.getElementById("header");
+  this.scrollY >= 50
+    ? header.classList.add("shadow-header")
+    : header.classList.remove("shadow-header");
+};
+window.addEventListener("scroll", shadowHeader);
+
 /*=============== EMAIL JS ===============*/
 
 /*=============== SHOW SCROLL UP ===============*/
