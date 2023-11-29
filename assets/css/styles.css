@@ -451,8 +451,8 @@ img {
 .button,
 .button-ghost {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   column-gap: 0.5rem;
 }
 .button {
@@ -564,6 +564,13 @@ img {
   list-style: square;
   color: var(--title-color);
   margin-bottom: 3rem;
+}
+
+.about__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
 }
 
 /*=============== SERVICES ===============*/
