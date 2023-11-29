@@ -448,7 +448,123 @@ img {
 
 /*=============== BUTTON ===============*/
 
+.button,
+.button-ghost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.button {
+  background-color: var(--black-color);
+  padding: 1.1rem 1.5rem;
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+  transition: background-color 0.4s;
+  &:hover {
+    background-color: var(--first-color);
+  }
+}
+
+.button i {
+  font-size: 1.25rem;
+}
+.button-ghost i {
+  font-size: 1.25rem;
+}
+
+.button-ghost {
+  border: 3px solid var(--black-color);
+  color: var(--black-color);
+  padding: 0.5rem;
+  transition: border 0.4s, color 0.4s;
+  &:hover {
+    border: 3px solid var(--first-color);
+  }
+}
+
 /*=============== ABOUT ===============*/
+
+.about {
+  background-color: var(--container-color);
+  transition: background-color 0.4s;
+}
+
+.about__container {
+  row-gap: 0;
+}
+
+.about__perfil {
+  position: relative;
+  justify-self: center;
+  margin-block: 2.5rem 4.5rem;
+}
+.about__image {
+  width: 220px;
+}
+.about__img {
+  position: relative;
+  border: 4px solid var(--white-color);
+  z-index: 1;
+}
+.about__shadow,
+.about__line,
+.about__box {
+  position: absolute;
+}
+
+.about__shadow {
+  width: 150px;
+  height: 385px;
+  background-color: var(--body-color);
+  top: -2.5rem;
+  right: -3.5rem;
+  border-bottom: 4px solid var(--first-color);
+  transition: background-color 0.4s;
+}
+
+.geometric-box {
+  top: 1.5rem;
+  right: -2.8rem;
+}
+.about__line {
+  filter: invert(1);
+  right: -1.25rem;
+  top: 6rem;
+  width: 50px;
+  transition: filter 0.4s;
+}
+
+.about__box {
+  width: 40px;
+  height: 40px;
+  background-color: var(--first-color);
+  right: -0.5rem;
+  bottom: 1.5rem;
+}
+.about__info {
+  padding-left: 1.25rem;
+}
+
+.about_descr {
+  position: relative;
+  color: var(--title-color);
+  margin-bottom: 1.5rem;
+  &::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: var(--title-color);
+    position: absolute;
+    left: -1.75rem;
+    top: 0.5rem;
+  }
+}
+.about__list {
+  list-style: square;
+  color: var(--title-color);
+  margin-bottom: 3rem;
+}
 
 /*=============== SERVICES ===============*/
 
