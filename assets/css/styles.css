@@ -575,6 +575,53 @@ img {
 
 /*=============== SERVICES ===============*/
 
+.services {
+}
+
+.services__container {
+  grid-template-columns: 250px;
+  justify-content: center;
+  row-gap: 2rem;
+  padding-top: 1rem;
+}
+
+.services__card {
+  position: relative;
+}
+
+.services__border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid var(--first-color);
+  top: 0;
+  left: 0;
+  transition: transform 0.4s;
+}
+.services__card:hover .services__border {
+  transform: translate(0.75rem, 0.75rem);
+}
+.services__content {
+  height: 100%;
+  background-color: var(--body-color);
+  border: 4px solid var(--black-color);
+  padding: 6rem 1rem 3rem;
+  z-index: 5;
+  position: relative;
+  transition: background-color 0.4s, border 4s;
+}
+.services__icon {
+  position: relative;
+  display: inline-flex;
+}
+.services__box {
+}
+
+.services__title {
+}
+.services__descr {
+}
+
 /*=============== PROJECTS ===============*/
 
 /*=============== CONTACT ===============*/

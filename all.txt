@@ -60,10 +60,6 @@ https://www.linkedin.com/
 Services.
 
 .services__title .services__description
-Web Design
-Beautiful and elegant designs with 
-interfaces that are intuitive, efficient 
-and pleasant  to use for the user.
 
 Development
 Custom web development tailored to your 
@@ -100,7 +96,6 @@ design at the client's request.
 View
 
 https://github.com/
-https://dribbble.com/
 
 ========== CONTACT ==========
 .section__title-2
@@ -133,8 +128,6 @@ Does not send emails
 Write me on my social networks
 
 .contact__social-link
-https://www.facebook.com/
-https://www.instagram.com/
 https://www.linkedin.com/
 
 
@@ -173,4 +166,4 @@ Home - About - Projects
 
 .footer__copy
 &#169; All Rights Reserved By 
-<a href="#">Bedimcode.</a>
+<a href="#">Timacode.</a>
