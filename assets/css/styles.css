@@ -614,12 +614,24 @@ img {
   position: relative;
   display: inline-flex;
 }
+.services__icon i {
+  position: relative;
+  font-size: 2rem;
+  color: var(--black-color);
+  z-index: 5;
+}
 .services__box {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: var(--first-color);
+  right: -2px;
+  top: -2px;
 }
 
 .services__title {
-}
-.services__descr {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1.25rem;
 }
 
 /*=============== PROJECTS ===============*/
