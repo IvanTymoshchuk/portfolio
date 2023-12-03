@@ -636,6 +636,88 @@ img {
 
 /*=============== PROJECTS ===============*/
 
+.projects {
+  background-color: var(--container-color);
+  transition: background-color 0.4s;
+}
+
+.projects__container {
+  row-gap: 2rem;
+}
+
+.projects__card {
+  padding: 1rem 1rem 2rem;
+  transition: background-color 0.4s;
+  &:hover {
+    background-color: var(--white-color);
+  }
+}
+.projects__image {
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+.projects__img {
+}
+.projects__btn {
+  position: absolute;
+  right: 1rem;
+  bottom: -1.5rem;
+  padding: 1rem;
+}
+.button {
+}
+
+.projects__content {
+  margin-bottom: 1.25rem;
+}
+.projects__sybtitle {
+  position: relative;
+  display: inline-block;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+  padding-left: 1.75rem;
+  &::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: var(--text-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+}
+.projects__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.75rem;
+}
+.projects__decr {
+}
+.projects__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.projects__link {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  transition: color 0.4s;
+}
+.projects__link i {
+  color: var(--title-color);
+  font-size: 1rem;
+  transition: color 0.4s;
+}
+.projects__link:hover,
+.projects__link:hover i {
+  color: var(--first-color);
+}
+
 /*=============== CONTACT ===============*/
 
 /* Opaque placeholder */
