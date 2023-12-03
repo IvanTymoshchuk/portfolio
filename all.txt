@@ -78,14 +78,19 @@ Projects.
 
 .projects__subtitle 
 Website
-App
+Game
 
 .projects__title 
-Restaurant Website
-Yoga App
-Fast Food App
-Coffee Delivery Website
+Sport Life Website
+Cinemania Website
+Phonebook Website
+Evo-Gym Website
+Ice-Cream Website
+CreativeScroll Website
 Barbershop Website
+Guess the number Game
+Investing Website
+Architecture Website
 
 .projects__description
 Project that you carry out in the design 
