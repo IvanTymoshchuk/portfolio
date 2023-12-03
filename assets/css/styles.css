@@ -664,8 +664,6 @@ img {
   bottom: -1.5rem;
   padding: 1rem;
 }
-.button {
-}
 
 .projects__content {
   margin-bottom: 1.25rem;
@@ -692,8 +690,7 @@ img {
   font-size: var(--h3-font-size);
   margin-bottom: 0.75rem;
 }
-.projects__decr {
-}
+
 .projects__buttons {
   display: flex;
   align-items: center;
