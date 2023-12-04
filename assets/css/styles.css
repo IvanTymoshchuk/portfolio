@@ -935,8 +935,22 @@ img {
   background-color: hsl(0, 0%, 55%);
 }
 
-
 /*=============== SCROLL UP ===============*/
+.scrollup {
+  position: fixed;
+  display: inline-flex;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--black-color);
+  padding: 8px;
+  font-size: 1.25rem;
+  color: var(--white-color);
+  z-index: var(--z-tooltip);
+  transition: bottom 0.4s, transform 0.4s, background-color 0.4s;
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
+}
 
 /* Show Scroll Up */
 
