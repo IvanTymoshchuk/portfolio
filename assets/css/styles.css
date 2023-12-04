@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-
+  --white-color: hsl(0, 0%, 95%);
   --first-color: hsl(14, 98%, 50%);
   --black-color: hsl(0, 0%, 18%);
   --black-color-light: hsl(0, 0%, 30%);
@@ -622,9 +622,6 @@ body.white-theme {
 
 /*=============== SERVICES ===============*/
 
-.services {
-}
-
 .services__container {
   grid-template-columns: 250px;
   justify-content: center;
@@ -696,15 +693,14 @@ body.white-theme {
   padding: 1rem 1rem 2rem;
   transition: background-color 0.4s;
   &:hover {
-    background-color: var(--white-color);
+    background-color: var(--body-color);
   }
 }
 .projects__image {
   position: relative;
   margin-bottom: 0.75rem;
 }
-.projects__img {
-}
+
 .projects__btn {
   position: absolute;
   right: 1rem;
@@ -798,7 +794,7 @@ body.white-theme {
 
 .contact__mail {
   position: relative;
-  background-color: var(--black-color);
+  background-color: var(--container-color);
   padding: 5rem 1.5rem 2.5rem;
   margin-top: -2.5rem;
   transition: background-color 0.4s;
