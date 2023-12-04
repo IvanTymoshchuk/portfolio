@@ -82,14 +82,14 @@ window.addEventListener("scroll", scrollUp);
 /*=============== DARK LIGHT THEME ===============*/
 
 const themeButton = document.getElementById("theme-btn");
-const darkTheme = "dark-theme";
+const whiteTheme = "white-theme";
 const iconTheme = "ri-sun-line";
 
 const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
 
 const getCurrentTheme = () =>
-  document.body.classList.contains(darkTheme) ? "dark" : "light";
+  document.body.classList.contains(whiteTheme) ? "white" : "light";
 
 const getCurrentIcon = () =>
   document.body.classList.contains(iconTheme)
@@ -97,8 +97,8 @@ const getCurrentIcon = () =>
     : "ri-sun-line";
 
 if (selectedTheme) {
-  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
-    darkTheme
+  document.body.classList[selectedTheme === "white" ? "add" : "remove"](
+    whiteTheme
   );
   themeButton.classList[
     selectedIcon === "ri-moon-clear-line" ? "add" : "remove"
@@ -106,7 +106,7 @@ if (selectedTheme) {
 }
 
 themeButton.addEventListener("click", () => {
-  document.body.classList.toggle(darkTheme);
+  document.body.classList.toggle(whiteTheme);
   themeButton.classList.toggle(iconTheme);
 
   localStorage.setItem("selected-theme", getCurrentTheme());
