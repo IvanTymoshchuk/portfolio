@@ -896,19 +896,45 @@ img {
 /*=============== FOOTER ===============*/
 
 .footer {
+  background-color: var(--black-color);
 }
 .footer__container {
+  padding-block: 3rem 2rem;
+  row-gap: 2.5rem;
 }
-.container {
-}
-.grid {
+.footer__links {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
 }
 .footer__link {
+  color: var(--white-color);
+  transition: color 0.4s;
+  &:hover {
+    color: var(--text-color-light);
+  }
 }
 .footer__copy {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  text-align: center;
+}
+.footer__copy a {
+  color: var(--white-color);
+  font-size: var(--font-medium);
 }
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 75%);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 55%);
+}
+
 
 /*=============== SCROLL UP ===============*/
 
