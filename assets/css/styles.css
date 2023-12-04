@@ -878,7 +878,6 @@ body.white-theme {
 .contact__social {
   display: grid;
   row-gap: 1rem;
-  background-color: hsl(0, 0%, 10%);
   padding-block: 1rem 2rem;
   text-align: center;
 }
@@ -1015,7 +1014,33 @@ body.white-theme {
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
-  
+  .home__container,
+  .about__container {
+    grid-template-columns: 350px;
+    justify-content: center;
+  }
+  .contact__data {
+    width: 350px;
+    padding: 4rem 1.5rem;
+    margin-inline: auto;
+  }
+  .contact__container {
+    grid-template-columns: 500px;
+    justify-content: center;
+  }
+  .contact__group {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+}
+/* For tablet */
+@media screen and (min-width: 768px) {
+  .services__container {
+    grid-template-columns: repeat(2, 250px);
+  }
+  .projects__container {
+    grid-template-columns: repeat(2, 350px);
+  }
 }
 /* For large devices */
 @media screen and (max-width: 768px) {
