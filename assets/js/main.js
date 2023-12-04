@@ -61,7 +61,7 @@ const sendEmail = (e) => {
         }, 3000);
         // Clear input fields
         contactForm.reset();
-      },
+        },
       () => {
         // Show error message
         contactMessage.textContent = "Message not sent (service error) ❌";
