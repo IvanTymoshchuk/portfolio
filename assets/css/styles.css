@@ -94,7 +94,31 @@ img {
 
 /*=============== THEME ===============*/
 
+.nav__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
 /*========== Variables Dark theme ==========*/
+
+body.dark-theme{
+    --first-color: hsl(14, 98%, 50%);
+  --black-color: hsl(0, 0%, 18%);
+  --black-color-light: hsl(0, 0%, 30%);
+  --title-color: hsl(0, 0%, 95%);
+  --text-color: hsl(0, 0%, 70%);
+  --body-color: hsl(0, 0%, 8%);
+  --container-color: hsl(0, 0%, 12%);
+}
+
 
 /*========== 
 	Color changes in some parts of 
