@@ -109,8 +109,8 @@ img {
 
 /*========== Variables Dark theme ==========*/
 
-body.dark-theme{
-    --first-color: hsl(14, 98%, 50%);
+body.dark-theme {
+  --first-color: hsl(14, 98%, 50%);
   --black-color: hsl(0, 0%, 18%);
   --black-color-light: hsl(0, 0%, 30%);
   --title-color: hsl(0, 0%, 95%);
@@ -119,11 +119,32 @@ body.dark-theme{
   --container-color: hsl(0, 0%, 12%);
 }
 
-
 /*========== 
 	Color changes in some parts of 
 	the website, in dark theme
 ==========*/
+.dark-theme .shadow-header {
+  box-shadow: 0 1 12px hsla(0, 0%, 0%, 0.6);
+}
+
+.dark-theme .section__title-1::after .dark-theme .section__title-2::after {
+  background-color: hsla(14, 70%, 50%, 0.2);
+}
+
+.dark-theme :is(.home__arrow, .home__line, .about__line) {
+  filter: none;
+}
+.dark-theme :is(.button-ghost, .services__icon) {
+  color: var(--white-color);
+}
+
+.dark-theme .projects__card:hover {
+  background-color: var(--body-color);
+}
+
+.dark-theme :is(.contact__mail, .contact__input, .contact__label) {
+  background-color: var(--container-color);
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
