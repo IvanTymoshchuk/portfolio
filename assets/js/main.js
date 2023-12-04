@@ -102,12 +102,12 @@ if (selectedTheme) {
   );
   themeButton.classList[
     selectedIcon === "ri-moon-clear-line" ? "add" : "remove"
-  ];
+  ](iconTheme);
 }
 
 themeButton.addEventListener("click", () => {
   document.body.classList.toggle(darkTheme);
-  themeButton.body.classList.toggle(iconTheme);
+  themeButton.classList.toggle(iconTheme);
 
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
