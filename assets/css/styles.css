@@ -883,6 +883,14 @@ img {
   top: -16px;
 }
 
+.contact__message {
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  position: absolute;
+  bottom: -1.6rem;
+  left: 0;
+}
+
 /* Move label up & sticky label */
 
 /*=============== FOOTER ===============*/
