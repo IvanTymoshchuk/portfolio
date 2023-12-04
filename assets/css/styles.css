@@ -1003,6 +1003,20 @@ body.white-theme {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
-/* For medium devices */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+  .about__shadow {
+    height: 330px;
+    right: -2.5rem;
+  }
+}
 
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  
+}
 /* For large devices */
+@media screen and (max-width: 768px) {
+}
